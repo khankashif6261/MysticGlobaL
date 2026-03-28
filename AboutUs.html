@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+   <!-- Top Bar -->
+<div class="bg-gray-100 text-sm px-4 sm:px-6 py-2 
+            flex flex-col sm:flex-row sm:justify-between items-center gap-2">
+
+  <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-center sm:text-left">
+    <span>📞 +91 82919 57890</span>
+    <span>✉ mysticglobal6261@gmail.com</span>
+  </div>
+
+  <div class="text-center sm:text-right">
+    Customer Support | EN
+  </div>
+
+</div>
+
+<!-- Navbar -->
+<div class="px-4 sm:px-6 md:px-8 py-4 shadow">
+
+  <div class="flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-2xl font-bold">
+      <img src="./logomystic.jpeg" class="h-10"/>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 ml-10 text-gray-700">
+      <li class="cursor-pointer"><a href="/home.html">Home</a></li>
+      <li class="cursor-pointer"><a href="/Domestic.html">Domestic</a></li>
+      <li class="cursor-pointer"><a href="/international.html">International</a></li>
+      <li class="cursor-pointer"><a href="/wildlife.html">Wildlife </a></li>
+      <li class="text-orange-500 cursor-pointer"><a href="/AboutUs.html">About Us</a></li>
+      <li class="cursor-pointer"><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+
+    <!-- Desktop Button -->
+    <button class="hidden md:block ml-auto bg-slate-800 text-white px-6 py-3 rounded-full">
+      Plan My Tour →
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-gray-700">
+
+    <ul class="flex flex-col gap-4">
+      <li class="cursor-pointer"><a href="/home.html">Home</a></li>
+      <li class="cursor-pointer"><a href="Domestic.html">Domestic</a></li>
+      <li class="cursor-pointer"><a href="international.html">International</a></li>
+      <li class="cursor-pointer"><a href="wildlife.html">Wildlife</a></li>
+      <li class="text-orange-500 cursor-pointer"><a href="/AboutUs.html">About Us</a></li>
+      <li class="cursor-pointer"><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+
+    <button class="w-full bg-slate-800 text-white px-6 py-3 rounded-full">
+      Plan My Tour →
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- Script -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+    <section class="bg-gray-100 py-20 px-6">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <!-- Badge -->
+      <span class="inline-block bg-red-500 text-white text-sm font-semibold px-4 py-1 rounded-full mb-4">
+        About Us
+      </span>
+
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
+        Crafting Unforgettable <br />
+        Travel Experiences
+      </h2>
+
+      <!-- Text -->
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Mystic Global is a dynamic travel company dedicated to creating memorable travel experiences.
+        Based in India, we specialize in curating personalized holidays, corporate travel solutions,
+        and unique tour packages that cater to the diverse needs of leisure and business travelers.
+      </p>
+
+      <p class="text-gray-600 leading-relaxed mb-8">
+        With strong industry connections and a passionate team, we focus on providing value, comfort,
+        and reliability, ensuring our guests travel hassle-free and return with unforgettable memories.
+      </p>
+
+    </div>
+
+    <!-- RIGHT IMAGES -->
+    <div class="relative flex justify-center items-center">
+
+      <!-- Big Circle Image -->
+      <div class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] rounded-full overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523" 
+             alt="Main Travel" 
+             class="w-full h-full object-cover">
+      </div>
+
+      <!-- Small Circle 1 -->
+      <div class="absolute top-10 left-0 w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-white shadow-md">
+        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/2-mehrangarh-fort-jodhpur-rajasthan-city-hero?qlt=82&ts=1726660925514" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Small Circle 2 -->
+      <div class="absolute bottom-0 left-16 w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
+        <img src="https://images.unsplash.com/photo-1609947017136-9daf32a5eb16" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Small Circle 3 -->
+      <div class="absolute bottom-4 right-0 w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-white shadow-md">
+        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5" class="w-full h-full object-cover">
+      </div>
+
+      <!-- Small Circle 4 -->
+      <div class="absolute top-16 right-6 w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-4 border-white shadow-md">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="w-full h-full object-cover">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- Footer -->
+<!-- Vision & Mission Section -->
+<section class="bg-gray-100 py-16 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+    
+    <!-- Vision -->
+    <div class="bg-gradient-to-r from-pink-100 to-blue-100 p-8 rounded-xl shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Our Vision</h2>
+      <p class="text-gray-700 leading-relaxed">
+        To be recognized as a trusted travel partner, offering innovative and 
+        cost-effective travel solutions that enhance customer satisfaction and 
+        inspire repeat journeys.
+      </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="bg-gradient-to-r from-pink-100 to-blue-100 p-8 rounded-xl shadow-md">
+      <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+      <ul class="text-gray-700 space-y-3">
+        <li>✔ Deliver high-quality travel services with integrity and transparency.</li>
+        <li>✔ Create meaningful partnerships with hotels, resorts, airlines, and travel agents.</li>
+        <li>✔ Promote sustainable and responsible tourism while supporting local communities.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="relative py-20 px-6 text-white">
+  
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" 
+         class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/60"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12">Why Choose Us?</h2>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      
+      <!-- Card 1 -->
+      <div class="border border-white/40 rounded-xl p-6 backdrop-blur-sm">
+        <div class="text-3xl mb-4">👍</div>
+        <p>Commitment to safe & sustainable tourism</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-white/40 rounded-xl p-6 backdrop-blur-sm">
+        <div class="text-3xl mb-4">⏰</div>
+        <p>24/7 customer support</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border border-white/40 rounded-xl p-6 backdrop-blur-sm">
+        <div class="text-3xl mb-4">💰</div>
+        <p>Competitive pricing with best value deals</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="border border-white/40 rounded-xl p-6 backdrop-blur-sm">
+        <div class="text-3xl mb-4">🧭</div>
+        <p>Personalized service & expert guidance</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="border border-white/40 rounded-xl p-6 backdrop-blur-sm">
+        <div class="text-3xl mb-4">🤝</div>
+        <p>Wide network of trusted partners</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<footer class="bg-slate-900 text-gray-300 pt-12 pb-6">
+
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-10">
+
+<!-- Company -->
+
+<div>
+
+<h2 class="text-2xl font-bold text-white mb-4">Vini Tours</h2>
+
+<p class="text-sm leading-6">
+Explore the world with us. We provide the best domestic and international tour packages with unforgettable experiences.
+</p>
+
+</div>
+
+
+<!-- Quick Links -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer">Home</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Domestic Tours</li>
+
+<li class="hover:text-orange-400 cursor-pointer">International Tours</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Wildlife Tours</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Blog</li>
+
+</ul>
+
+</div>
+
+
+<!-- Support -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Support</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer">Contact Us</li>
+
+<li class="hover:text-orange-400 cursor-pointer">About Us</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Privacy Policy</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Terms & Conditions</li>
+
+<li class="hover:text-orange-400 cursor-pointer">FAQs</li>
+
+</ul>
+
+</div>
+
+
+<!-- Contact -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+
+<p class="text-sm mb-2">📞 +91 82919 57890
+</p>
+
+<p class="text-sm mb-2">✉ mysticglobal6261@gmail.com</p>
+
+<p class="text-sm">📍 Mumbai, India</p>
+
+<div class="flex gap-4 mt-4 text-xl">
+
+<span class="cursor-pointer hover:text-orange-400">🌐</span>
+
+<span class="cursor-pointer hover:text-orange-400">📘</span>
+
+<span class="cursor-pointer hover:text-orange-400">📸</span>
+
+<span class="cursor-pointer hover:text-orange-400">🐦</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bottom -->
+
+<div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+
+© 2026 Vini Tours. All Rights Reserved | Designed with ❤
+
+</div>
+
+</footer>
+</body>
+</html>

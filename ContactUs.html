@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<!-- Top Bar -->
+<div class="bg-gray-100 text-sm px-4 sm:px-6 py-2 
+            flex flex-col sm:flex-row sm:justify-between items-center gap-2">
+
+  <div class="flex flex-col sm:flex-row gap-2 sm:gap-6 text-center sm:text-left">
+    <span>📞 +91 82919 57890</span>
+    <span>✉ mysticglobal6261@gmail.com</span>
+  </div>
+
+  <div class="text-center sm:text-right">
+    Customer Support | EN
+  </div>
+
+</div>
+
+<!-- Navbar -->
+<div class="px-4 sm:px-6 md:px-8 py-4 shadow">
+
+  <div class="flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="text-2xl font-bold">
+      <img src="./logomystic.jpeg" class="h-10"/>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 ml-10 text-gray-700">
+      <li class="cursor-pointer"><a href="/home.html">Home</a></li>
+      <li class="cursor-pointer"><a href="/Domestic.html">Domestic</a></li>
+      <li class="cursor-pointer"><a href="/international.html">International</a></li>
+      <li class="cursor-pointer"><a href="/wildlife.html">Wildlife </a></li>
+      <li class="cursor-pointer"><a href="/AboutUs.html">About Us</a></li>
+      <li class="text-orange-500 cursor-pointer">Contact Us</li>
+    </ul>
+
+    <!-- Desktop Button -->
+    <button class="hidden md:block ml-auto bg-slate-800 text-white px-6 py-3 rounded-full">
+      Plan My Tour →
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col mt-4 space-y-4 md:hidden text-gray-700">
+
+    <ul class="flex flex-col gap-4">
+      <li class="cursor-pointer"><a href="/home.html">Home</a></li>
+      <li class="cursor-pointer"><a href="Domestic.html">Domestic</a></li>
+      <li class="cursor-pointer"><a href="international.html">International</a></li>
+      <li class="cursor-pointer"><a href="wildlife.html">Wildlife</a></li>
+      <li class="cursor-pointer"><a href="/AboutUs.html">About Us</a></li>
+      <li class="text-orange-500 cursor-pointer"><a href="ContactUs.html">Contact Us</a></li>
+    </ul>
+
+    <button class="w-full bg-slate-800 text-white px-6 py-3 rounded-full">
+      Plan My Tour →
+    </button>
+
+  </div>
+
+</div>
+
+
+
+<!-- Script -->
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+    <section class="bg-gray-100 py-12">
+  <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    <!-- Left Side -->
+    <div class="space-y-6">
+      
+      <!-- Phone -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4">
+        <div class="bg-red-500 text-white w-14 h-14 flex items-center justify-center rounded-full">
+          📞
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Phone</h3>
+          <p class="text-gray-600">+91 82919 57890</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4">
+        <div class="bg-red-500 text-white w-14 h-14 flex items-center justify-center rounded-full">
+          ✉️
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Email Now</h3>
+          <p class="text-gray-600">mysticglobal6261@gmail.com </p>
+        </div>
+      </div>
+
+      <!-- Opening Time -->
+      <div class="bg-white rounded-xl shadow p-6 flex items-center gap-4">
+        <div class="bg-red-500 text-white w-14 h-14 flex items-center justify-center rounded-full">
+          📅
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">Opening Time</h3>
+          <p class="text-gray-600">8:00 AM - 10:00 PM</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Side Form -->
+    <div class="bg-white rounded-xl shadow p-8">
+      <h2 class="text-2xl font-bold mb-6">Book Now</h2>
+
+      <form class="space-y-4">
+        
+        <!-- Name -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="First name *"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+          
+          <input type="text" placeholder="Last name"
+            class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+        </div>
+
+        <!-- Phone -->
+        <input type="tel" placeholder="Phone"
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+        <!-- Email -->
+        <input type="email" placeholder="Email *"
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+        <!-- Message -->
+        <textarea rows="4" placeholder="Write a message"
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+
+        <!-- Amount -->
+        <input type="number" placeholder="₹ Enter an amount"
+          class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+        <!-- Button -->
+        <button type="submit"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition">
+          Book Now
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+<footer class="bg-slate-900 text-gray-300 pt-12 pb-6">
+
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-10">
+
+<!-- Company -->
+
+<div>
+
+<h2 class="text-2xl font-bold text-white mb-4">Mystic Global</h2>
+
+<p class="text-sm leading-6">
+Explore the world with us. We provide the best domestic and international tour packages with unforgettable experiences.
+</p>
+
+</div>
+
+
+<!-- Quick Links -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="home.html">Home</a></li>
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="Domestic.html">Domestic Tours</a></li>
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="international.html">International Tours</a></li>
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="wildlife.html">Wildlife Tours</a></li>
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="ContactUs.html">Contact Us</a></li>
+
+<li class="hover:text-orange-400 cursor-pointer"><a href="AboutUs.html">About Us</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- Support -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Support</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer">Contact Us</li>
+
+<li class="hover:text-orange-400 cursor-pointer">About Us</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Privacy Policy</li>
+
+<li class="hover:text-orange-400 cursor-pointer">Terms & Conditions</li>
+
+<li class="hover:text-orange-400 cursor-pointer">FAQs</li>
+
+</ul>
+
+</div>
+
+
+<!-- Contact -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">Contact</h3>
+
+<p class="text-sm mb-2">📞 +91 82919 57890
+</p>
+
+<p class="text-sm mb-2">✉ mysticglobal6261@gmail.com</p>
+
+<p class="text-sm">📍 Mumbai, India</p>
+
+<div class="flex gap-4 mt-4 text-xl">
+
+<span class="cursor-pointer hover:text-orange-400">🌐</span>
+
+<span class="cursor-pointer hover:text-orange-400">📘</span>
+
+<span class="cursor-pointer hover:text-orange-400">📸</span>
+
+<span class="cursor-pointer hover:text-orange-400">🐦</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bottom -->
+
+<div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+
+© 2026 Mystic Global. All Rights Reserved | Designed with ❤
+
+</div>
+
+</footer>
+<script>
+  const WHATSAPP_NUMBER = "918291957890";
+
+  // ---------- 1. Handle ALL "Plan My Tour" buttons ----------
+  const allButtons = document.querySelectorAll("button");
+
+  allButtons.forEach(btn => {
+    if (btn.innerText.toLowerCase().includes("plan my tour")) {
+      btn.addEventListener("click", () => {
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}`, "_blank");
+      });
+    }
+  });
+
+  // ---------- 2. Handle BOOK NOW form ----------
+  const form = document.querySelector("form");
+
+  if (form) {
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const inputs = form.querySelectorAll("input, textarea");
+
+      let firstName = "";
+      let lastName = "";
+      let phone = "";
+      let email = "";
+      let message = "";
+      let amount = "";
+
+      inputs.forEach(input => {
+        const placeholder = (input.placeholder || "").toLowerCase();
+
+        if (placeholder.includes("first")) firstName = input.value;
+        else if (placeholder.includes("last")) lastName = input.value;
+        else if (placeholder.includes("phone")) phone = input.value;
+        else if (placeholder.includes("email")) email = input.value;
+        else if (placeholder.includes("amount")) amount = input.value;
+      });
+
+      message = form.querySelector("textarea")?.value || "";
+
+      const text = `New Booking Request:
+Name: ${firstName} ${lastName}
+Phone: ${phone}
+Email: ${email}
+Message: ${message}
+Amount: ₹${amount}`;
+
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+      window.open(url, "_blank");
+    });
+  }
+</script>
+</body>
+</html>
