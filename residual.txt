@@ -1,0 +1,151 @@
+<footer class="bg-slate-900 text-gray-300 pt-14 pb-6">
+
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-10">
+
+<!-- Company -->
+
+<div>
+
+<h2 class="text-2xl font-bold text-white mb-4">
+Mystic Global
+</h2>
+
+<p class="text-sm leading-6 mb-5">
+Explore the world with us. We provide the best domestic, international and weekend tour packages with unforgettable experiences.
+</p>
+
+<button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full text-sm transition">
+Plan My Tour →
+</button>
+
+</div>
+
+
+<!-- Tours -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">
+Tours
+</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/index.html">Home</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/Domestic.html">Domestic Tours</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/international.html">International Tours</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/Weekends.html">Weekend Trips</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/wildlife.html">Wildlife Tours</a>
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Company Links -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">
+Company
+</h3>
+
+<ul class="space-y-2 text-sm">
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/AboutUs.html">About Us</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+<a href="/ContactUs.html">Contact Us</a>
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+Privacy Policy
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+Terms & Conditions
+</li>
+
+<li class="hover:text-orange-400 cursor-pointer">
+FAQs
+</li>
+
+</ul>
+
+</div>
+
+
+<!-- Contact -->
+
+<div>
+
+<h3 class="text-lg font-semibold text-white mb-4">
+Contact
+</h3>
+
+<p class="text-sm mb-2">
+📞 +91 97694 56449
+</p>
+
+<p class="text-sm mb-2">
+✉ mysticglobal6261@gmail.com
+</p>
+
+<p class="text-sm mb-4">
+📍 Mumbai, India
+</p>
+
+<p class="text-sm mb-3">
+Customer Support: 24/7
+</p>
+
+<div class="flex gap-5 text-xl">
+
+<a class="hover:text-orange-400 transition cursor-pointer">
+🌐
+</a>
+
+<a class="hover:text-orange-400 transition cursor-pointer">
+📘
+</a>
+
+<a class="hover:text-orange-400 transition cursor-pointer">
+📸
+</a>
+
+<a class="hover:text-orange-400 transition cursor-pointer">
+🐦
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bottom -->
+
+<div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+
+© 2026 Mystic Global. All Rights Reserved | Designed with ❤
+
+</div>
+
+</footer>
